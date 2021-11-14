@@ -1,25 +1,29 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AscendingDigits
 {
     public static void main(String[] args)
     {
-        int rev=0;
-
         Scanner sc= new Scanner(System.in);
 
         System.out.println("Enter the number : ");
-        int num=sc.nextInt();
 
-        while(num!=0)
+        String numstr = sc.next();
+        if(numstr.matches("^\\d+\\d+"))  //Checking entered  number is integer or not.
+
         {
-            int num1 =num % 10;
-            rev= rev * 10 + num1;
-            int div= num/10;
-            num = div;
+            char[] numarry = numstr.toCharArray();
 
+            Arrays.sort(numarry);
+
+            String Ascnum = String.valueOf(numarry);
+
+            System.out.println(" original number is " + numstr );
+            System.out.println("Sorted with Ascending order of digit is " + Ascnum);
         }
-        System.out.println("Number with reverse digit is "+rev);
+        else
+            System.out.println("Input is not  an Integer number");
 
 
     }
