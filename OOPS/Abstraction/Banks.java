@@ -2,7 +2,11 @@ package oppsAssignments;
 
 public abstract class Banks
 {
-    public abstract void displayDenominations();
+    public abstract void displayDenominations()
+    {
+        system.out.println("Denominations available in banks are displayed below: ");
+    }
+    
 
     public static void main(String[] args)
     {
