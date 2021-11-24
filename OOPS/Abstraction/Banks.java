@@ -9,8 +9,8 @@ public abstract class Banks
         Banks canaraBank = new CanaraBank();
         canaraBank.displayDenominations();
 
-        Banks bof = new BankOfMaharashtra();
-        bof.displayDenominations();
+        Banks bom = new BankOfMaharashtra();
+        bom.displayDenominations();
 
         Banks icici = new ICICIBank();
         icici.displayDenominations();
