@@ -1,7 +1,5 @@
 package oppsAssignments;
 
-import java.util.Scanner;
-
 public class LargNum
 {
     public void LargestNumber(int num1, int num2)
@@ -13,6 +11,19 @@ public class LargNum
 
     }
 
+    public static void main(String[] args) {
+        int a=4;
+        int b=6;
+        LargNum ln= new LargNum();
+        ln.LargestNumber(a,b);
+
+    }
+
+}
+
+
+public class LargNum1 extends LargNum
+{
     public void LargestNumber(int num1,int num2,int num3)
     {
         int x=num1;
@@ -25,16 +36,13 @@ public class LargNum
 
         System.out.println("Largest number between "+num1+","+num2+","+num3+" is "+x);
     }
-
-
-    public static void main(String[] args) {
-        int a=4;
+    public static void main(String[] args) 
+    {
+        int a=5;
         int b=6;
         int c=7;
-        LargNum ln= new LargNum();
-        ln.LargestNumber(a,b);
-        ln.LargestNumber(a,b,c);
-
-    }
-
-}
+        
+        LargNum1 ln1= new LargNum1();
+        ln1.LargestNumber(a,b,c);
+     }
+ }
