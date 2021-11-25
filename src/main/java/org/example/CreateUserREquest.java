@@ -69,13 +69,4 @@ public class CreateUserREquest
         this.phone = phone;
     }
 
-    public int getUserStatus() {
-        return userStatus;
-    }
-
-    public void setUserStatus(int userStatus) {
-        this.userStatus = userStatus;
-    }
-
 }
-
