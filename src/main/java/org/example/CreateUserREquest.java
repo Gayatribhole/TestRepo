@@ -10,7 +10,6 @@ public class CreateUserREquest
     private String email;
     private String password;
     private String phone;
-    private int userStatus;
 
     public String getId()
     {
