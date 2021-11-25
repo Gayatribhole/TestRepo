@@ -39,7 +39,7 @@ public class CreateUserForPetStore
     }
     @Test
     public void verifyMultipleUsersCreationbyArray() {
-        List<CreateUserREquest> userCreationArray = new ArrayList<>();
+        List<CreateUserREquest> createUserArray = new ArrayList<>();
 
         CreateUserREquest user1 = new CreateUserREquest();
         CreateUserREquest user2 = new CreateUserREquest();
